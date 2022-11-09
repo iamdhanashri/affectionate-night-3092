@@ -6,15 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* topnavbar  */
+        .topnavbarimg {
+            width: 100%;
+        }
+
+        .googlePlay {
+            margin-top: -70px;
+            margin-left: 87%;
+            height: 10px;
+        }
+
+        .googlePlay img {
+
+            height: 50px;
+        }
+
+        /* secondNav */
+
+        .secondNav {
+            display: flex;
+            margin-top: 4%;
+            /* justify-content: space-around; */
+
+        }
+
+        .searchInput {
+            width: 500px;
+            margin-right: 200px;
+            height: 45px;
+        }
+
+        .selectInput {
+            width: 300px;
+            height: 50px;
+            margin-left: 50px;
+        }
+
+        #account {
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            color: black;
+
+        }
+
+        /* lastnavbar */
+        .lastnavbar {
+
+            height: 50px;
+            width: 100%;
+            background-color: #DD0285;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            font-weight: bolder;
+
+        }
+    </style>
 </head>
 
 <body>
-    <h1>
-        This is My HomePage
-    </h1>
-    <h2>
-        day2 work
-    </h2>
+    <!-- topnavbar -->
+    <div>
+        <img class="topnavbarimg" src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="">
+        <div class="googlePlay">
+            <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="">
+        </div>
+
+    </div>
+
+    <!-- secondNav -->
+
+    <div class="secondNav">
+        <div> <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></div>
+        <select class="selectInput" name="" id="">
+            <option value="">All Categories</option>
+            <option value="">Makeup</option>
+            <option value="">Face</option>
+            <option value="">Foundation</option>
+            <option value="">Brush</option>
+            <option value="">HightLighter</option>
+            <option value="">Compact Powder</option>
+            <option value="">Face Primer</option>
+            <option value="">Makeup Remover</option>
+            <option value="">Contour</option>
+            <option value="">BB Cream</option>
+            <option value="">Eye Liner</option>
+
+        </select>
+        <input class="searchInput" type="text" placeholder="Enter Your Search...">
+        <button id="account">My Account</button>
+    </div>
+
+    <!-- lastNavbar -->
+    <div class="lastnavbar">
+        <p>MAKEUP</p>
+        <p>SKIN</p>
+        <p>HAIR</p>
+        <p>PERSONAL CARE</p>
+        <p>MOM & BABY CARE</p>
+        <p>FRAGNANCE</p>
+        <p>AYURVEDA</p>
+        <p>BRANDS</p>
+        <p>MY CART</p>
+
+
+    </div>
+
+    <!-- sidebar -->
+
+    <div>
+        <h2>ALL CATEGORIES</h2>
+        <P>Makeup</P>
+        <P>Skin</P>
+        <p>Hair</p>
+        <p>Personal Care</p>
+        <p>Mom & Baby Care</p>
+        <p>Fragrance</p>
+        <p>Ayurveda</p>
+    </div>
+
+
 </body>
 
 </html>
