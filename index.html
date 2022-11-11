@@ -165,18 +165,117 @@
             display: flex;
         }
 
-        .productdiv2 div {
+        /* .productdiv2 div {
             border: 1px solid orange;
             height: 700px;
             width: 390px;
             gap: 25px;
 
+        } */
+
+        .bestseller {
+            border: 1px solid green;
+            height: 600px;
+            width: 100%;
+            margin: auto;
+            margin-top: 0px;
+
+
         }
 
-        .productdiv2 div div {
+        .latestproduct {
             border: 1px solid green;
-            height: 500px;
+            height: 630px;
             width: 100%;
+            margin: auto;
+            margin-top: 0px;
+
+
+
+        }
+
+        .mostviewed {
+            border: 1px solid green;
+            height: 690px;
+            width: 100%;
+            margin: auto;
+            margin-top: 0px;
+
+
+        }
+
+        .bestseller div {
+            border: 1px solid rgb(201, 112, 168);
+            height: 200px;
+            width: 100%;
+            display: flex;
+
+        }
+
+        .latestproduct div {
+            border: 1px solid green;
+            height: 210px;
+            width: 100%;
+            display: flex;
+
+
+        }
+
+        .mostviewed div {
+            border: 1px solid green;
+            height: 230px;
+            width: 100%;
+            display: flex;
+
+        }
+
+        .productdiv2 div button {
+            background-color: #DD0285;
+            color: white;
+            height: 30px;
+            width: 130px;
+
+        }
+
+        /* .middleimg4 */
+        .middleimg4 {
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        /* h3 title div/   */
+        .title {
+            border: 1px solid yellow;
+            height: 80px;
+            width: 1200px;
+            display: flex;
+            margin: auto;
+            margin-bottom: 0px;
+        }
+
+        .best {
+            border: 1px solid yellow;
+            height: 80px;
+            width: 400px;
+            margin-bottom: 0px;
+        }
+
+        .latest {
+            border: 1px solid yellow;
+            height: 80px;
+            width: 400px;
+            margin-bottom: 0px;
+
+        }
+
+        .most {
+            border: 1px solid yellow;
+            height: 80px;
+            width: 400px;
+            margin-bottom: 0px;
         }
     </style>
 </head>
@@ -371,44 +470,82 @@
         <img src="https://www.beautybebo.com/pub/media/ads/Forent_Banner_5-min.jpg" alt="">
     </div>
 
+
+    <div class="title">
+        <div class="best">
+            <h3>BEST SELLER</h3>
+        </div>
+        <div class="latest">
+            <H3>LATEST PRODUCTS</H3>
+        </div>
+        <div class="most">
+            <H3>MOST VIEWED</H3>
+        </div>
+
+
+    </div>
+
     <!-- productdiv2 -->
     <div class="productdiv2">
         <!-- best seller -->
+
         <div class="bestseller">
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg"
-                    alt="">
-                <p>Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid+</p>
-                <p>264.00 12% off</p>
-                <button>Add To Cart</button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg"
+                        alt=""></div>
+                <div>
+                    <p>Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid+</p>
+                    <p>264.00 12% off</p>
+                    <button>Add To Cart</button>
+                </div>
+
+
             </div>
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-140.jpg"
-                    alt="">
-                <p>Blue Heaven Candy Matte Lip Color</p>
-                <p></p>
-                <button></button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-140.jpg"
+                        alt=""></div>
+
+                <div>
+                    <p>Blue Heaven Candy Matte Lip Color</p>
+                    <p></p>
+                    <button></button>
+                </div>
             </div>
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-89.jpg"
-                    alt="">
-                <p>Ponds White Beauty Anti Spot Fairness Day Cream SPF 15 PA++</p>
-                <p>240.00</p>
-                <button>Add To Cart</button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-89.jpg"
+                        alt=""></div>
+                <div>
+                    <p>Ponds White Beauty Anti Spot Fairness Day Cream SPF 15 PA++</p>
+                    <p>240.00</p>
+                    <button>Add To Cart</button>
+                </div>
+
             </div>
         </div>
         <!-- latest product -->
-        <div>
+
+        <div class="latestproduct">
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d28bf778903487024816_1.jpg"
-                    alt="">
-                <p>Miss Clair Blusher Kit-3660-B-3</p>
-                <p>410.00</p>
-                <button>Add To Cart</button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d28bf778903487024816_1.jpg"
+                        alt=""></div>
+                <div>
+                    <p>Miss Clair Blusher Kit-3660-B-3</p>
+                    <p>410.00</p>
+                    <button>Add To Cart</button>
+                </div>
+
+
             </div>
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/7/3732f778903487000209_1.jpg"
-                    alt="">
+                <div>
+                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/7/3732f778903487000209_1.jpg"
+                        alt="">
+                </div>
+
                 <div>
                     <p>Miss Clair Eyeshadow Kit-3716-11-3</p>
                     <p>395.00</p>
@@ -417,39 +554,115 @@
 
             </div>
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/d/bdd30238903487002319_1.jpg"
-                    alt="">
-                <p>Miss Clair M20-Pointed Blending Brush(L)</p>
-                <p>375.00</p>
-                <button>Add To Cart</button>
+                <div>
+                    <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/d/bdd30238903487002319_1.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <p>Miss Clair M20-Pointed Blending Brush(L)</p>
+                    <p>375.00</p>
+                    <button>Add To Cart</button>
+                </div>
+
+
             </div>
         </div>
         <!-- most viewed -->
-        <div>
+
+
+        <div class="mostviewed">
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/f/9f1b98c8904352000683_1.jpg"
-                    alt="">
-                <p>Biotique Bio Green Apple Fresh Daily Purifying Shampoo &</p>
-                <p>299.00</p>
-                <button>Add To Cart</button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/9/f/9f1b98c8904352000683_1.jpg"
+                        alt=""></div>
+                <div>
+                    <p>Biotique Bio Green Apple Fresh Daily Purifying Shampoo &</p>
+                    <p>299.00</p>
+                    <button>Add To Cart</button>
+                </div>
+
+
             </div>
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/t/2/t2_1.jpg"
-                    alt="">
-                <p>Ponds Triple Vitamin Moisturising Lotion</p>
-                <p>200.00 20% off</p>
-                <button></button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/t/2/t2_1.jpg"
+                        alt=""></div>
+                <div>
+                    <p>Ponds Triple Vitamin Moisturising Lotion</p>
+                    <p>200.00 20% off</p>
+                    <button></button>
+                </div>
+
+
             </div>
             <div>
-                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-88.jpg"
-                    alt="">
-                <p>Pantene Pro-V Oil Replacement(Pack Of 2)</p>
-                <p>342.00 10% off</p>
-                <button></button>
+                <div><img
+                        src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/u/n/untitled-88.jpg"
+                        alt=""></div>
+                <div>
+                    <p>Pantene Pro-V Oil Replacement(Pack Of 2)</p>
+                    <p>342.00 10% off</p>
+                    <button></button>
+                </div>
+
+
             </div>
         </div>
     </div>
 
+    <!-- middleimg4 -->
+    <div class="middleimg4">
+        <img src="https://www.beautybebo.com/pub/media/ads/1599-Forent-banner-4.gif" alt="">
+    </div>
+
+
+    <!-- footer part -->
+    <div>
+        <div>
+            <h5>CONTACT INFO</h5>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+        <div>
+            <H5>QUICK LINKS</H5>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Return & Refund Policy</li>
+                <li>Shipping Policy</li>
+            </ul>
+        </div>
+        <div>
+            <h5>CUSTOMER INFO</h5>
+            <ul>
+                <li>My Account</li>
+                <li>Track Your Order</li>
+                <li>Order Returns</li>
+                <li>Wishlist</li>
+                <li>News & Events</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div>
+            <h5>CATEGORIES</h5>
+            <ul>
+                <li>Makeup</li>
+                <li>Skin</li>
+                <li>Hair</li>
+                <li>Personal Care</li>
+                <li>Mom & Baby Care</li>
+                <li>Fragrance</li>
+                <li>Ayurveda</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
+
+
 
 </html>
