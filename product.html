@@ -336,6 +336,12 @@
 </html>
 <script>
 
+    let productCont = document.getElementById("container");
+
+    let filter = document.getElementById("filter");
+
+    let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
+
     let bag = [];
     let url = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`
 
@@ -346,6 +352,7 @@
             console.log(data);
             displayCard(data);
         })
+
 
 
     function displayCard(data) {
@@ -402,12 +409,48 @@
             cartBtn.innerText = "Add To Cart"
             cartBtn.setAttribute("class", "cartBtn")
 
-
-
             div.append(imageprod, name, divPrice, divRating, cartBtn);
             document.querySelector("#container").append(div);
 
+            cartBtn.addEventListener("click", function () {
+                if (addToCartFunc(elem.name) === true) {
+                    alert("Product Added");
+                    cartLS.push(elem);
+                    localStorage.setItem("cart-page", JSON.stringify(cartLS));
+                } else {
+                    alert("Product Already Exist");
+                }
+
+
+                location.reload()
+            })
+
         })
+        // displayCard(data)
+
     }
+
+
+    function addToCartFunc(id) {
+        for (let i = 0; i < cartLS.length; i++) {
+            if (cartLS[i].name === id) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let cartData = JSON.parse(localStorage.getItem("cart-page"))
+
+
+
+    // let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart-page'))
+
+        // let spantext = document.createElement('span')
+        // var len = cart.length;
+        // spantext.innerHTML = " " + len;
+
+        // txt.appendChild(spantext)
 
 </script>
