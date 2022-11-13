@@ -79,13 +79,19 @@
 
         /* sidevbar */
         .prodSidebar {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 25%;
-            height: 500px;
+            height: 300px;
             margin-top: 50px;
             margin-left: 100px;
 
         }
+
+        .imgdiliv {
+            margin-left: 100px;
+
+        }
+
 
         /* product */
         #container {
@@ -95,7 +101,7 @@
             width: 60%;
             margin-left: 40%;
             gap: 20px;
-            margin-top: -450px;
+            margin-top: -750px;
 
         }
 
@@ -132,6 +138,8 @@
             font-weight: bold;
             border-radius: 5px;
             margin-top: 50px;
+            cursor: pointer;
+
         }
 
 
@@ -190,6 +198,12 @@
             border-radius: 5px;
             color: white;
             font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        #handle_sort {
+            margin-left: 100px;
 
         }
     </style>
@@ -212,8 +226,9 @@
     <!-- secondNav -->
 
     <div class="secondNav">
-        <div> <a href="index.html"><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
-                    alt=""></a> </div>
+        <div> <a href="index.html">
+                <div> <img style="width:150px; height:70px; " src=" ./photo/World Beauty.png" alt=""></div>
+            </a> </div>
         <select class="selectInput" name="" id="">
             <option value="">All Categories</option>
             <option value="">Makeup</option>
@@ -258,9 +273,42 @@
 
 
     <!-- sidebar -->
+
     <div class="prodSidebar">
 
+        <h3>SHOP BY</h3>
+        <p>SKIN TYPE</p>
+        <p>PRICE</p>
+        <p>BRAND</p>
+        <p>SHADES</p>
+        <p>HAIR TYPE</p>
+        <p>FORMULATION</p>
 
+
+
+
+
+
+    </div>
+
+    <div>
+        <img class="imgdiliv" src="https://www.beautybebo.com/pub/media/free-delivery.jpg" alt="">
+    </div>
+
+    <div>
+        <!-- sorting -->
+
+
+        <select id="handle_sort" onChange="handleSort()">
+            <!-- <option value="Product Name">Product Name</option>
+                    <option value="New Arrivals">New Arrivals</option> -->
+            <option value="">sort by price</option>
+            <option value="Price:Low to High">Price:Low to High</option>
+            <option value="Price:High to Low">Price:High to Low</option>
+
+
+
+        </select>
 
 
     </div>
@@ -352,6 +400,19 @@
             console.log(data);
             displayCard(data);
         })
+
+
+    function handleSort() {
+        let selected = document.querySelector("#handle_sort").value;
+        if (selected == "Price:High to Low") {
+            data.sort((a, b) => b.price - a.price);
+        }
+        if (selected == "Price:Low to High") {
+            data.sort((a, b) => a.price - b.price);
+        }
+        console.log(data);
+        displayCard(data);
+    }
 
 
 
