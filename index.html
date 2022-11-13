@@ -105,7 +105,7 @@
         }
 
         .hotmaindiv {
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             height: 400px;
             width: 100%;
             display: flex;
@@ -115,7 +115,7 @@
         .hotmaindiv div {
             height: 369px;
             width: 250px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             text-align: center;
             margin-left: 100px;
         }
@@ -141,7 +141,7 @@
         }
 
         .pinkover {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 100px;
             width: 1200px;
             display: flex;
@@ -151,7 +151,7 @@
         }
 
         .pinkover div {
-            border: 1px solid pink;
+            /* border: 1px solid pink; */
             height: 100px;
             width: 170px;
             text-align: center;
@@ -159,7 +159,7 @@
 
         /* productdiv */
         .productdiv {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             height: 450px;
             width: 1200px;
             display: flex;
@@ -167,7 +167,7 @@
         }
 
         .productdiv div {
-            border: 1px solid olivedrab;
+            /* border: 1px solid olivedrab; */
             height: 450px;
             width: 400px;
             text-align: center;
@@ -184,7 +184,7 @@
         }
 
         .bestseller {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 600px;
             width: 100%;
             margin: auto;
@@ -211,7 +211,7 @@
 
         /* .productdiv2 */
         .productdiv2 {
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             height: 700px;
             width: 1200px;
             margin: auto;
@@ -223,7 +223,7 @@
 
 
         .latestproduct {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 630px;
             width: 100%;
             margin: auto;
@@ -234,7 +234,7 @@
         }
 
         .mostviewed {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 690px;
             width: 100%;
             margin: auto;
@@ -244,7 +244,7 @@
         }
 
         .bestseller div {
-            border: 1px solid rgb(201, 112, 168);
+            /* border: 1px solid rgb(201, 112, 168); */
             height: 200px;
             width: 100%;
             display: flex;
@@ -252,7 +252,7 @@
         }
 
         .latestproduct div {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 210px;
             width: 100%;
             display: flex;
@@ -261,7 +261,7 @@
         }
 
         .mostviewed div {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 230px;
             width: 100%;
             display: flex;
@@ -373,6 +373,10 @@
             font-weight: bold;
 
         }
+
+        .hotd {
+            margin-left: 160px;
+        }
     </style>
 </head>
 
@@ -389,7 +393,9 @@
     <!-- secondNav -->
 
     <div class="secondNav">
-        <div> <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></div>
+        <a href="index.html">
+            <div> <img style="width:150px; height:70px; " src=" ./photo/World Beauty.png" alt=""></div>
+        </a>
         <select class="selectInput" name="" id="">
             <option value="">All Categories</option>
             <option value="">Makeup</option>
@@ -470,33 +476,39 @@
     <!-- middleimg -->
 
     <div class="middleimg">
-        <img src="https://www.beautybebo.com/pub/media/ads/Blue_heaven_Forent_3-min.jpg" alt="">
+
+        <a href="product.html"><img src="https://www.beautybebo.com/pub/media/ads/Blue_heaven_Forent_3-min.jpg"
+                alt=""></a>
     </div>
 
 
     <!-- HOT DEALS -->
 
-    <h2>HOT DEALS</h2>
+    <h2 class="hotd">HOT DEALS</h2>
     <div class="hotmaindiv">
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8901526102655_2bbb.jpg"
-                alt="">
+            <a href="product.html">
+                <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8901526102655_2bbb.jpg"
+                    alt="">
+            </a>
             <p>L'Oreal Paris Fall Resist 3X Anti-Hairfall Shampoo (704ml)</p>
             <p>Price : ₹ 405</p>
             <button>Add To Cart</button>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8901526102662_2bbb.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8901526102662_2bbb.jpg"
+                    alt=""></a>
             <p>L'Oreal Paris Total Repair 5 Shampoo (640ml+64ml)</p>
             <p>Price : ₹ 338</p>
             <button>Add To Cart</button>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/2/12983_s1-8901030685231_1.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/2/12983_s1-8901030685231_1.jpg"
+                    alt=""></a>
             <p>Lakme 9 To 5 Naturale Night Creme
                 (50gm)
             </p>
@@ -505,8 +517,9 @@
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/2/12983_s1-8901030685231.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/2/12983_s1-8901030685231.jpg"
+                    alt=""></a>
             <p>Lakme 9 To 5 Naturale Night Creme
                 (100gm)
             </p>
@@ -518,40 +531,47 @@
     <!-- middleimg2 -->
 
     <div class="middleimg2">
-        <img src="https://www.beautybebo.com/pub/media/ads/joy_banner.gif" alt="">
-        <img src="https://www.beautybebo.com/pub/media/ads/lotus_banner.gif" alt="">
+
+        <a href="product.html"><img src="https://www.beautybebo.com/pub/media/ads/joy_banner.gif" alt=""></a>
+        <a href="product.html"><img src="https://www.beautybebo.com/pub/media/ads/lotus_banner.gif" alt=""></a>
     </div>
 
     <!-- pinkover -->
     <div class="pinkover">
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png" alt="">
+
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png"
+                    alt=""></a>
             <p>Makeup</p>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/skin.png" alt="">
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/skin.png" alt=""></a>
             <p>Skin</p>
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/hair.png" alt="">
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/hair.png" alt=""></a>
             <p>Hair</p>
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png" alt="">
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png"
+                    alt=""></a>
             <p>Personal Care</p>
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png" alt="">
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png"
+                    alt=""></a>
             <p>Mom & Baby Care</p>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/eye_1.png" alt="">
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/eye_1.png"
+                    alt=""></a>
             <p>Eye</p>
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png" alt="">
+            <a href="product.html"><img src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png"
+                    alt=""></a>
             <p>Fragrance</p>
         </div>
     </div>
@@ -559,32 +579,36 @@
     <!-- productdiv -->
     <div class="productdiv">
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d28bf778903487024816_1.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d28bf778903487024816_1.jpg"
+                    alt=""></a>
             <p>Miss Clair Blusher Kit-3660-B-3</p>
             <p>410.00</p>
             <button>Add To Cart</button>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/7/3732f778903487000209_1.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/7/3732f778903487000209_1.jpg"
+                    alt=""></a>
             <p>Miss Clair Eyeshadow Kit-3716-11-3</p>
             <p>395.00</p>
             <button>Add To Cart</button>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/d/bdd30238903487002319_1.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/d/bdd30238903487002319_1.jpg"
+                    alt=""></a>
             <p>Miss Clair M20-Pointed Blending Brush(L)</p>
             <p>375.00</p>
             <button>Add To Cart</button>
 
         </div>
         <div>
-            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/1/610f0238903487002296_1.jpg"
-                alt="">
+            <a href="product.html"><img
+                    src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/1/610f0238903487002296_1.jpg"
+                    alt=""></a>
             <p>Miss Clair M19-Eyeshadow Blending Brush</p>
             <p>375.00</p>
             <button>Add To Cart</button>
@@ -595,7 +619,7 @@
 
     <!-- middleimg3 -->
     <div class="middleimg3">
-        <img src="https://www.beautybebo.com/pub/media/ads/Forent_Banner_5-min.jpg" alt="">
+        <a href="product.html"><img src="https://www.beautybebo.com/pub/media/ads/Forent_Banner_5-min.jpg" alt=""></a>
     </div>
 
 
@@ -764,7 +788,7 @@
 
     <!-- middleimg4 -->
     <div class="middleimg4">
-        <img src="https://www.beautybebo.com/pub/media/ads/1599-Forent-banner-4.gif" alt="">
+        <a href="product.html"><img src="https://www.beautybebo.com/pub/media/ads/1599-Forent-banner-4.gif" alt=""></a>
     </div>
 
 
