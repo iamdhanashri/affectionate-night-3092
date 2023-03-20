@@ -19,12 +19,12 @@ https://dhanashri-world-beauty-02fac0.netlify.app/
 
 ## Glimpse of My work
 # HOMEPAGE :
-![HOMEPAGE](https://github.com/lokeshahire/ImageGit/blob/main/2022-06-19%2018_12_47-Greenshot.png?raw=true)
+![HOMEPAGE](https://github.com/iamdhanashri/affectionate-night-3092/blob/main/photo/home.png?raw=true)
 <br>
 <br>
 <br>
 # CART PAGE:
-![CART](https://github.com/lokeshahire/ImageGit/blob/main/2022-06-19%2018_15_31-.png?raw=true)
+![CART](https://github.com/iamdhanashri/affectionate-night-3092/blob/main/photo/cart.png?raw=true)
 <br>
 <br>
 <br>
